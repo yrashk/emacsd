@@ -16,6 +16,11 @@
 
 ;; Editor
 (setq-default tab-width 4)
+(setq backup-inhibited t)
+(normal-erase-is-backspace-mode 1)
+(delete-selection-mode t)
+(setq visible-bell 'top-bottom)
+(put 'narrow-to-region 'disabled nil)
 
 
 ;; Coffee-mode
@@ -36,3 +41,12 @@
 
 
 (add-hook 'coffee-mode-hook '(lambda () (coffee-custom)))
+
+;; Keys
+
+;;; Version management
+(global-set-key (kbd "C-x C-g") 'magit-status)
+
+;;; Editor
+(global-set-key (kbd "M-DEL") 'backward-kill-word)
+
