@@ -1,3 +1,4 @@
 elpa/builtin-packages
 elpa/archive-contents
 auto-save-list
+*.el~
