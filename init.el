@@ -57,3 +57,7 @@
 ;;; Editor
 (global-set-key (kbd "M-DEL") 'backward-kill-word)
 
+;; Git
+
+(setq magit-git-executable "/usr/local/bin/git")
+
