@@ -16,6 +16,7 @@
 
 ;; Editor
 (setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
 (setq backup-inhibited t)
 (normal-erase-is-backspace-mode 1)
 (delete-selection-mode t)
