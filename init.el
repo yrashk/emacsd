@@ -72,4 +72,4 @@
    (cons '("\\.text" "\\.md" . markdown-mode) auto-mode-alist))
 ;; Fonts
 
-(set-face-attribute 'default nil :font "Pragmata")
+(set-face-attribute 'default nil :font "Anonymous Pro")
