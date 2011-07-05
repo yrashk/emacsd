@@ -75,3 +75,8 @@
 ;; Fonts
 
 (set-face-attribute 'default nil :font "Anonymous Pro" :height 140)
+
+;; Terminal
+(require 'multi-term)
+(setq multi-term-program "/bin/zsh")
+
