@@ -70,3 +70,6 @@
    "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
    (cons '("\\.text" "\\.md" . markdown-mode) auto-mode-alist))
+;; Fonts
+
+(set-face-attribute 'default nil :font "Pragmata")
