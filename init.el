@@ -63,3 +63,10 @@
 
 (setq magit-git-executable "/usr/local/bin/git")
 
+(add-to-list 'load-path "~/.emacs.d")
+
+;; Markdown
+(autoload 'markdown-mode "markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+   (cons '("\\.text" "\\.md" . markdown-mode) auto-mode-alist))
