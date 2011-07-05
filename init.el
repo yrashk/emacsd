@@ -63,3 +63,6 @@
 
 (setq magit-git-executable "/usr/local/bin/git")
 
+;; Fonts
+
+(set-face-attribute 'default nil :font "Pragmata")
