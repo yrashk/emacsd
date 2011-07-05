@@ -10,9 +10,11 @@
 
 ;; Theme
 (add-to-list 'load-path "~/.emacs.d/color-theme")
+(add-to-list 'load-path "~/.emacs.d/emacs-color-theme-solarized")
+(require 'color-theme-solarized)
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-arjen)
+(color-theme-solarized-dark)
 
 ;; Editor
 (setq-default tab-width 4)
@@ -72,4 +74,4 @@
    (cons '("\\.text" "\\.md" . markdown-mode) auto-mode-alist))
 ;; Fonts
 
-(set-face-attribute 'default nil :font "Anonymous Pro")
+(set-face-attribute 'default nil :font "Anonymous Pro" :height 140)
