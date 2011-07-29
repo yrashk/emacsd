@@ -81,3 +81,13 @@
 (require 'multi-term)
 (setq multi-term-program "/bin/zsh")
 
+;; YANG
+(require 'yang-mode)
+(autoload 'yang-mode "yang-mode" "Major mode for editing YANG modules." t)
+(add-to-list 'auto-mode-alist '("\\.yang$" . yang-mode))
+
+
+;; LFE
+(add-to-list 'load-path "~/.emacs.d/lfe")
+(require 'lfe-mode)
+(require 'lfe-start)
