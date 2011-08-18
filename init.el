@@ -49,6 +49,7 @@
 (setq load-path (cons  "/usr/local/lib/erlang/lib/tools-2.6.6.1/emacs"  load-path))
 (setq load-path (cons  "/usr/local/lib/erlang/lib/tools-2.6.6.2/emacs" load-path))
 (setq load-path (cons  "/usr/local/lib/erlang/lib/tools-2.6.6.3/emacs" load-path))
+(setq load-path (cons  "/usr/local/lib/erlang/lib/tools-2.6.6.4/emacs" load-path))
 (setq erlang-root-dir "/usr/local/lib/erlang")
 (setq exec-path (cons "/usr/local/lib/erlang/bin" exec-path))
 (require 'erlang-start)
@@ -82,3 +83,14 @@
 
 ;; Line numbers
 (global-linum-mode)
+
+;; YANG
+(require 'yang-mode)
+(autoload 'yang-mode "yang-mode" "Major mode for editing YANG modules." t)
+(add-to-list 'auto-mode-alist '("\\.yang$" . yang-mode))
+
+
+;; LFE
+(add-to-list 'load-path "~/.emacs.d/lfe")
+(require 'lfe-mode)
+(require 'lfe-start)
