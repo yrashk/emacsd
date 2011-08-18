@@ -84,6 +84,9 @@
 ;; Line numbers
 (global-linum-mode)
 
+;; ido
+(ido-mode)
+
 ;; YANG
 (require 'yang-mode)
 (autoload 'yang-mode "yang-mode" "Major mode for editing YANG modules." t)
