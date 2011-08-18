@@ -80,3 +80,5 @@
 (require 'multi-term)
 (setq multi-term-program "/bin/zsh")
 
+;; Line numbers
+(global-linum-mode)
