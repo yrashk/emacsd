@@ -54,6 +54,12 @@
 (setq exec-path (cons "/usr/local/lib/erlang/bin" exec-path))
 (require 'erlang-start)
 
+;; PlantUML
+
+(load
+ (expand-file-name "~/.emacs.d/plantuml-mode.el"))
+(require 'plantuml-mode)
+
 ;; Keys
 
 ;;; Version management
