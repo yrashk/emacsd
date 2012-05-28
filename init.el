@@ -104,3 +104,6 @@
 (add-to-list 'load-path "~/.emacs.d/lfe")
 (require 'lfe-mode)
 (require 'lfe-start)
+
+(add-to-list 'load-path "~/.emacs.d/elixir-mode")
+(require 'elixir-mode)
